@@ -30,7 +30,8 @@ if ($ARGV[0] eq '--no-restart') {
     shift (@ARGV);
 }
 
-my ($modname, $version) = @ARGV;
+my $modname = $ARGV[0];
+my ($version) = @ARGV;
 
 EBox::init();
 
